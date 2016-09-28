@@ -3,7 +3,7 @@ window.onload =
   var params = queryToDictionary();
   var serviceWorker = (params["service_worker"] === "true");
   var name = params["name"];
-  var shortName = params["shortName"];
+  var shortName = params["short_name"];
   var scope = params["scope"];
   var display = params["display"];
   var orientation = params["orientation"];
