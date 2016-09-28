@@ -116,7 +116,7 @@ function generateManifestJson(
   var iconPart =
       '    {\n' +
       '      "src": "{{src}}",\n' +
-      '      "sizes": "{{sizes}},"\n' +
+      '      "sizes": "{{sizes}}",\n' +
       '      "type"; "image/png"\n' +
       '    }{{separator}}\n';
   var manifestEnd =
