@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="url_generator.js"></script>
+<title>Web Manifest Test Page Generator</title>
+<style>
+div.initial {
+  background-color:wheat;
+  padding:5px;
+  border:2px solid black;
+  margin:5px;
+}
+
+div.update {
+  background-color:palegreen;
+  padding:5px;
+  border:2px solid black;
+  margin:5px;
+}
+</style>
+</head>
+<body>
+<h1>Web Manifest Test Page Generator</h1>
+<p/>
+<div class="initial">
+  <input type="checkbox" id="service_worker">Service Worker<br/>
+  Name: <input id="name" value="Long Train 🚂"/><br/>
+  Short Name: <input id="short_name" value="Short Train 🚋"/><br/>
+  Scope: <input id="scope"/><br/>
+  Display: <input id="display" value="standalone"/><br/>
+  Orientation: <input id="orientation"/><br/>
+  Start URL: <input id="start_url" value="generated.html"/><br/>
+  Theme Color: <input id="theme_color" value="purple"/><br/>
+  Background Color: <input id="background_color" value="teal"/><br/>
+  Icons:<br/>
+  <input type="checkbox" id="icon_circle_32"/>32x32px Circle</br>
+  <input type="checkbox" id="icon_triangle_48"/>48x48px Triangle</br>
+  <input type="checkbox" id="icon_square_64"/>64x64px Square<br/>
+  <input type="checkbox" id="icon_pentagon_128"/>128x128px Pentagon<br/>
+  <input type="checkbox" id="icon_hexagon_256"/>256x256px Hexagon<p/>
+</div>
+<div class="update">
+  <h3>Update</h3>
+  <input type="checkbox" id="update"/>Update after <input id="update_after_num_page_loads" value="5" />page loads<br/>
+  <input type="checkbox" name="update_service_worker"/>Service Worker<br/>
+  Name: <input id="update_name" value="Long Train 🚂"/><br/>
+  Short Name: <input id="update_short_name" value="Short Train 🚋"/><br/>
+  Scope: <input id="update_scope"/><br/>
+  Display: <input id="update_display" value="standalone"/><br/>
+  Orientation: <input id="update_orientation"/><br/>
+  Start URL: <input id="update_start_url" value="generated.html"/><br/>
+  Theme Color: <input id="update_theme_color" value="purple"/><br/>
+  Background Color: <input id="update_background_color" value="teal"/><br/>
+  Icons:<br/>
+  <input type="checkbox" id="update_icon_circle_32"/>32x32px Circle</br>
+  <input type="checkbox" id="update_icon_triangle_48"/>48x48px Triangle</br>
+  <input type="checkbox" id="update_icon_square_64"/>64x64px Square<br/>
+  <input type="checkbox" id="update_icon_pentagon_128"/>128x128px Pentagon<br/>
+  <input type="checkbox" id="update_icon_hexagon_256"/>256x256px Hexagon<p/>
+</div>
+<button onclick="createAndNavigateToTestPage()">Create Test Page</button>
+</html>
