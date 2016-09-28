@@ -27,23 +27,23 @@ function generateIconQueryParams(prefix) {
   var icons = [];
   var iconSizes = [];
   if (isCheckboxChecked(prefix + 'icon_circle_32')) {
-    icons.push('icons/circle32.png');
+    icons.push('icons/circle_32.png');
     iconSizes.push(32);
   }
   if (isCheckboxChecked(prefix + 'icon_triangle_48')) {
-    icons.push('icons/icon_triangle_48');
+    icons.push('icons/triangle_48.png');
     iconSizes.push(48);
   }
   if (isCheckboxChecked(prefix + 'icon_square_64')) {
-    icons.push('icons/icon_square_64');
+    icons.push('icons/square_64.png');
     iconSizes.push(64);
   }
   if (isCheckboxChecked(prefix + 'icon_pentagon_128')) {
-    icons.push('icons/icon_pentagon_128');
+    icons.push('icons/pentagon_128.png');
     iconSizes.push(128);
   }
   if (isCheckboxChecked(prefix + 'icon_hexagon_256')) {
-    icons.push('icons/icon_hexagon_256');
+    icons.push('icons/hexagon_256.png');
     iconSizes.push(256);
   }
   return prefix + 'icons=' + icons.join(',') + '&' + prefix + 'iconSizes=' +
