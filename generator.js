@@ -157,7 +157,7 @@ function isArray(test) {
 
 function
 registerServiceWorker() {
-  navigator.serviceWorker.register('service-worker.js')
+  navigator.serviceWorker.register('service_worker.js')
 }
 
 function getCookie(expectedSeed) {
