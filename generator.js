@@ -117,6 +117,7 @@ function generateManifestJson(
       '    {\n' +
       '      "src": "{{src}}",\n' +
       '      "sizes": "{{sizes}}"\n' +
+      '      "type"; "image/png"\n' +
       '    }{{separator}}\n';
   var manifestEnd =
       '  ]\n' +
