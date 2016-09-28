@@ -91,7 +91,7 @@ function stringToArray(value) {
 function appendManifestTag(manifest) {
   var linkTag = document.createElement("link");
   linkTag.rel = "manifest";
-  linkTag.href = "data:text/plain;" + escape(manifest);
+  linkTag.href = "data:text/plain;charset=utf-8," + escape(manifest);
   document.head.append(linkTag);
 }
 
